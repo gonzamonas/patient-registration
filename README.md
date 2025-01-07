@@ -38,6 +38,12 @@ For testing purposes, you can use a service like MailTrap.
 docker-compose up --build
 ```
 
+## API Access
+
+The API can be accessed at `http://localhost:8000`. 
+
+You can view the available endpoints and documentation by visiting `http://localhost:8000/docs`. This API is built using FastAPI and provides interactive documentation for easier exploration of the available endpoints.
+
 ## API Endpoints
 
 ### 1. **Register Patient**
