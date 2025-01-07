@@ -4,6 +4,8 @@ from typing import Annotated
 from fastapi import Depends
 from sqlmodel import create_engine, SQLModel, Session
 
+from app.models.patient import Patient
+
 database_url = os.getenv("DATABASE_URL")
 engine = create_engine(database_url)
 

@@ -12,11 +12,9 @@ from app.services.registration import register_patient
 app = FastAPI()
 
 
-@asynccontextmanager
-async def lifespan():
+@app.on_event("startup")
+def on_startup() -> None:
     create_db_and_tables()
-    yield
-    pass
 
 
 @app.post("/register/", status_code=201)
